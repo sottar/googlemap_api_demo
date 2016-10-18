@@ -28,7 +28,12 @@
       border-right: 1px solid #eee; }
       .section .block .list .item {
         padding: 15px 10px;
-        border: 1px solid #ccc; }
+        border: 1px solid #ccc;
+        cursor: pointer; }
+        .section .block .list .item:hover {
+          border: 1px solid #555; }
+        .section .block .list .item.active {
+          background: #dcdcdc; }
       .section .block .list .title {
         padding-bottom: 7px;
         font-size: 20px;

@@ -201,3 +201,8 @@ function getSmallNum(num1, num2) {
 function getLargeNum(num1, num2) {
   return num1 > num2 ? num1 : num2;
 };
+
+$('.item').on('click', function () {
+  $('.item').removeClass('active');
+  $(this).addClass('active');
+});
