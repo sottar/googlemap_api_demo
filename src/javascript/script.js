@@ -105,9 +105,12 @@ function createMap() {
       $('.block').animate({
         scrollTop: range, 
       })
+      console.log($('#' + i));
+      activeStationList($('#' + i));
     });
   }
 
+  /* ----------------- utils ----------------- */
   // infoWindowを表示する
   const openInfoWindow = (num) => {
     // 表示中のinfoWindow, markerがあれば削除
@@ -139,7 +142,7 @@ function createMap() {
   let displayingWindow = null;
   let displayingMarker = null;
 
-  $('.list_anchor').click(() => {
+  $('.list_anchor').on('click', () => {
     if (isOpened()) {
       closeStationList();
     } else {
@@ -202,7 +205,11 @@ function getLargeNum(num1, num2) {
   return (num1 > num2) ? num1 : num2;
 };
 
-$('.item').on('click', function() {
-  $('.item').removeClass('active');
-  $(this).addClass('active');
+$('.item').on('click', function(){
+  activeStationList($(this));
 });
+
+function activeStationList(target) {
+  $('.item').removeClass('active');
+  target.addClass('active');
+}
