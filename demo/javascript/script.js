@@ -75,7 +75,7 @@ function createMap() {
     // infoWindow
     var ballon = '<div width="150px">';
     ballon += '<div style="float:left;width:100%;margin-left:5px;">';
-    ballon += '<a href="' + mapPin[_i]['linkUrl'] + '">' + mapPin[_i]['stationName'] + '</a>';
+    ballon += '<a href="#">' + mapPin[_i]['stationName'] + '</a>';
     ballon += '</div></div>';
     infoWindow[_i] = new google.maps.InfoWindow({
       content: ballon
