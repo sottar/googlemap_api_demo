@@ -1,0 +1,63 @@
+.section {
+  margin: 20px auto;
+  position: relative;
+  border: 1px solid #ccc;
+  width: 90%;
+  height: 600px;
+  overflow: hidden; }
+  .section #googlemap {
+    width: 100%;
+    height: 600px; }
+  .section .wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 430px;
+    height: 600px; }
+  .section .block {
+    width: 399px;
+    height: 600px;
+    border-top: 1px solid #dcdcdc;
+    border-right: solid 1px #dcdcdc;
+    overflow-y: auto;
+    overflow-x: hidden; }
+    .section .block .list {
+      margin: 0;
+      width: 398px;
+      background: #fff;
+      border-right: 1px solid #eee; }
+      .section .block .list .item {
+        padding: 15px 10px;
+        border: 1px solid #ccc; }
+      .section .block .list .title {
+        padding-bottom: 7px;
+        font-size: 20px;
+        font-weight: bold; }
+      .section .block .list .text {
+        font-size: 12px; }
+  .section .list_anchor {
+    position: absolute;
+    left: 400px;
+    top: 20px;
+    background: #fff;
+    border-top: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    cursor: pointer; }
+    .section .list_anchor .icon_caret {
+      margin: 0;
+      width: 7px;
+      height: 14px;
+      background: url("../img/icon_caret.png") no-repeat; }
+    .section .list_anchor.opened {
+      padding: 27px 11px 27px 8px; }
+      .section .list_anchor.opened .icon_caret {
+        background-position: 0 0; }
+      .section .list_anchor.opened:hover .icon_caret {
+        background-position: -12px 0; }
+    .section .list_anchor.closed {
+      padding: 27px 8px 27px 11px; }
+      .section .list_anchor.closed .icon_caret {
+        background-position: 0 -19px; }
+      .section .list_anchor.closed:hover .icon_caret {
+        background-position: -12px -19px; }

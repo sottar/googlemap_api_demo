@@ -1,0 +1,79 @@
+.section {
+  margin: 20px auto;
+  position: relative;
+  border: 1px solid #ccc;
+  width: 90%;
+  height: 600px;
+  overflow: hidden;
+  #googlemap {
+    width: 100%;
+    height: 600px;
+  }
+  .wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 430px;
+    height: 600px;
+  }
+  .block {
+    width: 399px;
+    height: 600px;
+    border-top: 1px solid #dcdcdc;
+    border-right: solid 1px #dcdcdc;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .list {
+      margin: 0;
+      width: 398px;
+      background: #fff;
+      border-right: 1px solid #eee;
+      .item {
+        padding: 15px 10px;
+        border: 1px solid #ccc;
+      }
+      .title {
+        padding-bottom: 7px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .text {
+        font-size: 12px;
+      }
+    }
+  }
+  .list_anchor {
+    position: absolute;
+    left: 400px;
+    top: 20px;
+    background: #fff;
+    border-top: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    cursor: pointer;
+    .icon_caret {
+      margin: 0;
+      width: 7px;
+      height: 14px;
+      background: url("../img/icon_caret.png") no-repeat;
+    }
+    &.opened {
+      padding: 27px 11px 27px 8px;
+      .icon_caret {
+        background-position: 0 0;
+      }
+      &:hover .icon_caret {
+        background-position: -12px 0;
+      }
+    }
+    &.closed {
+      padding: 27px 8px 27px 11px;
+      .icon_caret {
+        background-position: 0 -19px;
+      }
+      &:hover .icon_caret {
+        background-position: -12px -19px;
+      }
+    }
+  }
+}
