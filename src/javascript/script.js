@@ -105,7 +105,6 @@ function createMap() {
       $('.block').animate({
         scrollTop: range, 
       })
-      console.log($('#' + i));
       activeStationList($('#' + i));
     });
   }
@@ -196,6 +195,7 @@ function createMap() {
     }
     return false;
   }
+
 }
 
 function getSmallNum(num1, num2) {

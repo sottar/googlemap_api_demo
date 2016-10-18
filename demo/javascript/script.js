@@ -105,7 +105,6 @@ function createMap() {
       $('.block').animate({
         scrollTop: range
       });
-      console.log($('#' + i));
       activeStationList($('#' + i));
     });
   }
