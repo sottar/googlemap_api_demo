@@ -3,6 +3,7 @@
   position: relative;
   border: 1px solid #ccc;
   width: 90%;
+  max-width: 1080px;
   height: 600px;
   overflow: hidden; }
   .section #googlemap {
@@ -66,3 +67,7 @@
         background-position: 0 -19px; }
       .section .list_anchor.closed:hover .icon_caret {
         background-position: -12px -19px; }
+
+.adsence {
+  width: 100%;
+  height: 100px; }
