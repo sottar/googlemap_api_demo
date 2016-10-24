@@ -3,12 +3,18 @@
   width: 100%;
   padding-bottom: 10px;
   i {
-    font-size: 30px;
+    padding-top: 10px;
+    font-size: 35px;
+    color: #333;
+    &:hover {
+      padding-top: 8px;
+      font-size: 40px;
+    }
   }
 }
 
 .section {
-  margin: 20px auto 10px;
+  margin: 20px auto 0;
   position: relative;
   border: 1px solid #ccc;
   width: 90%;
