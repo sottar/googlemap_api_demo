@@ -73,8 +73,8 @@ function createMap() {
       stationId: mapPin[i].stationId,
     });
     // infoWindow
-    let ballon = '<div width="150px">';
-    ballon += '<div style="float:left;width:100%;margin-left:5px;">';
+    let ballon = '<div width="auto">';
+    ballon += '<div style="float:left;width:100%;">';
     ballon += '<a href="#">' + mapPin[i]['stationName'] + '</a>';
     ballon += '</div></div>';
     infoWindow[i] = new google.maps.InfoWindow({
